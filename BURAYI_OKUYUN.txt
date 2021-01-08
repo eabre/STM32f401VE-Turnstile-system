@@ -1,0 +1,10 @@
+Hocam  sadece main.h stm32f4xx_it.c ve main.c dosyalarinda islemler yaptim.
+LED.c ile ilgili garip bir hata aldim fakat cozdum;
+Gorsel olarak da aldigim hatayi dosyanin icine koydum. Hata soyleydi, benim PC'de LCD.c 
+icindeki LCD_RS_GPIO_Port ya da LCD_RS_Pin degiskenlerinde hata 
+veriyor(did you mean LCD_RES_GPIO_Port gibide soyluyor ). Bu nedenle RS olan yerlere
+RES demem gerekiyor. Sizde de program basta calismazsa bundan kaynakli olabilir.
+
+Onun disinda program hatasız ve eksiksiz calisiyor fakat proteustan kaynaklı gecikmeler
+olabiliyor özellikle lcd_clear fonksiyonunun calistigi yerlerde. Bazen 3 sn.'ye kadar
+bekledigim oldu lcd_clear'dan dolayi ama dedigim gibi tamamen hatasiz calisiyor.
